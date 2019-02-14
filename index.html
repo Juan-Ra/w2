@@ -15,10 +15,10 @@
   <body data-spy="scroll" data-target="#navbar" data-offset="66">
 
     <!-- HEADER -->
-    <header id="header" class="sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-dark fondoScuro">
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="#"><span class="logo-top txt-lg">lorem</span></a>
+          <a class="navbar-brand" href="#"><span class="logo-top">lorem</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>  
@@ -29,6 +29,9 @@
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#bienvenido">Bienvenido</a>
+              </li>  
+              <li class="nav-item">
+                  <a class="nav-link" href="#acerca">Acerca</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-link" href="#servicios">Servicios</a>
@@ -47,7 +50,7 @@
     <!-- /HEADER -->
 
     <!-- HERO -->
-    <main id="main">
+    <main id="main" class="mb-5">
       <div class="overlay">
         <div class="container">
           <div class="row align-items-center ">
@@ -55,7 +58,7 @@
               <h1 class="main-title txt-xxl">Nam libero tempore</h1>
               <h2 class="second-title txt-lg">Dolor sit consectetur adisciplin ellit </h2>
               <p class="d-none d-lg-block text-hero txt-md">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-              <a class="btn btn-alert  mt-3" href="#contacto">Contactar</a>
+              <a class="btn btn-alert  mt-5 mt-lg-3" href="#contacto">Contactar</a>
             </div>
           </div>
         </div>
@@ -64,16 +67,16 @@
     <!-- /HERO -->
 
     <!-- Bienvenido -->
-    <section id="bienvenido" class="mt-5 mb-5 pt-5 pb-5">
+    <section id="bienvenido" class="section">
       <div class="container">
         <div class="row mb-4">
           <div class="col ">
-            <h2 class="second-title">Bienvenido</h2>
+            <h2 class="section-title">Bienvenido</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col mb-4">
-            <div class="flexible-video ">
+          <div class="col">
+            <div class="flexible-video">
                 <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/G3BhbfhAbLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
             </div>
           </div>
@@ -82,16 +85,59 @@
     </section>
     <!-- /Bienvenido -->
 
+        <!-- acerca US --> 
+        <section id="acerca" class="section acerca">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Acerca de</h2>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 mt-5 ">
+                <div class="card border-light">
+                  <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h5 class="card-title second-title txt-md">Card title</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                    <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mt-5">
+                <div class="card border-light">
+                  <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h5 class="card-title second-title txt-md">Card title</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                    <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mt-5">
+                <div class="card border-light">
+                  <img class="card-img-top" src="images/img3.jpg" alt="Card image cap">
+                  <div class="card-body text-center">
+                    <h5 class="card-title second-title txt-md">Card title</h5>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt, nulla ad autem molestiae libero harum quis necessitatibus! Nam animi ut reiciendis illum sit!</p>
+                    <a href="#" class="btn btn-mainColor btn-sm mt-3 ">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /acerca --> 
+    
+
     <!-- Servicios -->
-      <section id="servicios" class=" mb-5 pb-5">
+      <section id="servicios" class="section">
         <div class="container">
-          <div class="row mb-4">
+          <div class="row">
             <div class="col">
               <h2 class="second-title">Servicios</h2>
             </div>
           </div>
-          <div class="row mb-5 mb-lg-0">
-            <div class="col-12 col-lg-6 mb-5">
+          <div class="row  mb-lg-0">
+            <div class="col-12 col-lg-6 mt-5">
               <div class="card">
                 <div class="card-header rounded-top ">
                   <h2 class="txt-xl">Servicio 1</h2>
@@ -104,11 +150,11 @@
                 <div class="card-body rounded-bottom">
                   <p class="card-text txt-sm">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
                   <p class="card-text txt-sm">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                  <a href="#" class="btn btn-ok mt-3">Go somewhere</a>
+                  <a href="#" class="btn btn-alert mt-3">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 mb-5">
+            <div class="col-12 col-lg-6 mt-5">
               <div class="card">
                 <div class="card-header rounded-top">
                   <h2 class="txt-xl">Servicio 2</h2>
@@ -121,11 +167,11 @@
                 <div class="card-body rounded-bottom">
                   <p class="card-text txt-sm">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
                   <p class="card-text txt-sm">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                  <a href="#" class="btn btn-ok mt-3">Go somewhere</a>
+                  <a href="#" class="btn btn-alert mt-3">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 mb-5">
+            <div class="col-12 col-lg-6 mt-5">
               <div class="card">
                 <div class="card-header rounded-top">
                   <h2 class="txt-xl">Servicio 3</h2>
@@ -138,11 +184,11 @@
                 <div class="card-body rounded-bottom">
                   <p class="card-text txt-sm">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
                   <p class="card-text txt-sm">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                  <a href="#" class="btn btn-ok mt-3">Go somewhere</a>
+                  <a href="#" class="btn btn-alert mt-3">Go somewhere</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6 mb-5">
+            <div class="col-12 col-lg-6 mt-5">
               <div class="card">
                 <div class="card-header rounded-top">
                   <h2 class="txt-xl">Servicio 4</h2>
@@ -155,7 +201,7 @@
                 <div class="card-body rounded-bottom">
                   <p class="card-text txt-sm">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
                   <p class="card-text txt-sm">Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
-                  <a href="#" class="btn btn-ok mt-3">Go somewhere</a>
+                  <a href="#" class="btn btn-alert mt-3">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -165,7 +211,7 @@
     <!-- /Servicios -->
 
     <!-- Quienes Somos -->
-    <section id="quienesSomos" class="mt-5 mb-5 pt-6 pt-5 pb-5 bg-light ">
+    <section id="quienesSomos" class="section quienesSomos">
         <div class="container">
           <div class="row mb-4">
             <div class="col">
@@ -174,19 +220,19 @@
           </div>
           <div class="row">
             <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card bg-light  border-light">
+              <div class="card">
                 <img src="images\1.jpg" class="card-img-top rounded-circle" alt="imagen">
                 <div class="card-body">
                   <div class="badges mb-2">
                     <span class="badge badge-warning">SEO</span>     
                   </div>
                   <h5 class="card-title second-title">Jaime Codina</h5>
-                  <p class="card-text">Et harum quidem <abbr data-toggle="tooltip" title="Lorem ipsum dolor">quidem</abbr> rerum facilis est et expedita distinctio. Nam libero tempore, nihil impedit quo minus id quod maxime placeat facere possimus, omnis dolor repellendus.</p>
+                  <p class="card-text">Et harum quidem <abbr data-toggle="tooltip" title="Lorem ipsum dolor">quidem</abbr> rerum facilis est et expedita distinctio. Nam libero tempore, facere possimus, omnis dolor repellendus.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card bg-light  border-light">
+              <div class="card">
                 <img src="images\2.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                   <div class="badges mb-2">
@@ -198,7 +244,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card bg-light  border-light">
+              <div class="card">
                 <img src="images\3.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                   <div class="badges mb-2">
@@ -210,7 +256,7 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
-              <div class="card bg-light  border-light">
+              <div class="card">
                 <img src="images\4.jpg" class="card-img-top rounded-circle" alt="...">
                 <div class="card-body">
                   <div class="badges mb-2">
@@ -227,7 +273,7 @@
       <!-- /Quienes somos -->
 
     <!-- Contacto -->
-    <section id="contacto" class="pt-4 pb-4 mt-5 mb-5">
+    <section id="contacto" class="section">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -277,22 +323,19 @@
             <a href="#">Inicio</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Bienvenido</a>
+            <a href="#bienvenido">Bienvenido</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Servicios</a>
+            <a href="#acerca">Acerca</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Quiénes somos</a>
+            <a href="#servicios">Servicios</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Contáctanos</a>
+            <a href="#quienesSomos">Quiénes somos</a>
           </div>
           <div class="col-12 col-lg">
-            <a href="#">Términos y condiciones</a>
-          </div>
-          <div class="col-12 col-lg">
-            <a href="#">Privacidad</a>
+            <a href="#contacto">Contáctanos</a>
           </div>
         </div>
       </div>

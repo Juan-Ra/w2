@@ -2,32 +2,49 @@
   --mainColor: #21C1D2;
   --darkColor: #426F7D;
   --darkerColor:  #1B2D33;
+  --darkerColorTr:  rgba(27, 45, 51, .6);
   --okColor: #5EE987;
+  --okColorDark: rgb(43, 180, 84);
   --achtungColor: #FF8B4A;
+  --achtungColorDark: rgb(233, 97, 18);
   --lightColor: rgb(243, 243, 242);
+
+  --grisClaro: rgb(242, 247, 248);
+
+
+
   --titleFont: 'Roboto Slab', serif;
   --textFont: 'Roboto', sans-serif;
+
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 1s;
 }
 
 h1, h2, h3 {
   font-family: var(--titleFont);
 }
 
+
 .txt-sm{
-  font-size: 1rem;
+  font-size: 1em;
 }
 .txt-md{
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .txt-lg{
-  font-size: 2rem;
+  font-size: 2em;
 }
 .txt-xl{
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 .txt-xxl{
-  font-size: 3rem;
+  font-size: 3em;
 }
+
 .fondoScuro {
   background-color: var(--darkerColor);
 }
@@ -36,7 +53,7 @@ h1, h2, h3 {
   background: var(--darkerColor);
 }
 
-.second-title {
+.second-title, .section-title {
   font-family: var(--titleFont);
   font-weight: 300;
   color: var(--darkColor);
@@ -54,21 +71,28 @@ h1, h2, h3 {
 
 .btn {
   text-transform: uppercase;
+  color: white;
+  transition: .3s;
+}
+
+.btn:hover {
+  color: white;
 }
 
 .btn-mainColor{
   background-color: var(--mainColor);
-  color: white;
 }
 
 .btn-mainColor:hover{
-  background-color:var(--darkerColor);
-  color: white;
+  background-color:var(--darkColor);
 }
 
 .btn-ok{
   background-color: var(--okColor);
-  color: white;
+
+}
+.btn-ok:hover{
+  background-color: var(--okColorDark);
 }
 
 .btn-alert {
@@ -76,21 +100,59 @@ h1, h2, h3 {
   color: var(--lightColor);
 }
 
+.btn-alert:hover{
+  background-color: var(--achtungColorDark);
+}
+
+/*--------------------------------------------------------------------------
+    SECCIÓN GENERICA
+----------------------------------------------------------------------------*/
+
+.section {
+  padding: 4rem 0;
+}
+
+.section:nth-child(even){
+  background: var(--grisClaro);
+}
 
 /*--------------------------------------------------------------------------
     HEADER
 ----------------------------------------------------------------------------*/
 
-#header {
-  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+.header {
+  background-color: var(--darkerColorTr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: .3s;
+  z-index: 100;
 }
 
 .logo-top{
   font-family: var(--titleFont);
   font-weight: bold;
   color: var(--mainColor);
+  font-size: 3rem;
+  transition: .3s;
+}
+
+.scroll-header{
+  position: fixed;
+  background-color: var(--darkerColor);
+
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.scroll-header .logo-top{
+  font-size: 2rem;
+}
+
+.navbar {
+  padding: .0rem 1rem;
 }
 
 .nav-link {
@@ -107,11 +169,18 @@ h1, h2, h3 {
   background-image: url(../images/jeff-brown-246391-unsplash.jpg);
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 50rem;
   display: flex;
-  /* justify-content: center; */
   align-items: stretch;
 }
+
+@media only screen and (max-width: 990px) {
+  #main{
+    height: 40rem;
+    font-size: .7rem;
+  }
+}
+
 
 #main .overlay {
   width: 100%;
@@ -166,7 +235,9 @@ h1, h2, h3 {
 }
 
 #servicios .card-header{
-  background: var(--darkColor);
+  background: url(../images/s1.jpg);
+  background-size: cover;
+  background-position: right;
   color: var(--mainColor);
   padding: 2rem;
 }
@@ -199,6 +270,16 @@ h1, h2, h3 {
   margin-top: 10%;
 }
 
+
+/*--------------------------------------------------------------------------
+      QUIENESsOMOS
+----------------------------------------------------------------------------*/
+
+.quienesSomos .card {
+  border: none;
+  background: transparent;
+}
+
 /*--------------------------------------------------------------------------
     FOOTER
 ----------------------------------------------------------------------------*/
@@ -207,19 +288,16 @@ h1, h2, h3 {
   background: var(--darkerColor);
 }
 #footer a {
-  color:white;
+  color:rgba(255, 255, 255, .5);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: var(--textFont);
+  text-decoration: none;
+  line-height: 1.8;
+}
+#footer a:hover {
+  color:rgb(255, 255, 255);
+
 }
 
 
- @media only screen and (max-width: 990px) {
-
-  #main{
-    height: 400px;
-  }
-  .main-title{
-    font-size: 2.5rem;
-  }
-  .second-title{
-    font-size: 1.5rem;
-  }
- }

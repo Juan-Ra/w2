@@ -185,6 +185,13 @@ h1, h2, h3 {
   }
 }
 
+@media (max-width:850px) and (orientation:landscape) {
+  #main{
+    height: 27rem;
+    font-size: .6rem;
+  }
+}
+
 
 #main .overlay {
   width: 100%;

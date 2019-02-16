@@ -9,7 +9,6 @@ window.onscroll = function (){
     header.classList.remove('scroll-header');
     
   }
-  console.log('hi');
 }
      
 
